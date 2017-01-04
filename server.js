@@ -4,7 +4,7 @@ var PORT = process.env.PORT || 9000;
 var favicon = require('serve-favicon');
 
 app.use(express.static(__dirname + '/public'));
-app.use(favicon(__dirname + '/public/favicon.ico'));
+app.use(favicon(__dirname + '/public/assets/favicon.ico'));
 
 app.get('/', function (req, res) {
 	res.sendFile(__dirname + '/public/Login.html');
